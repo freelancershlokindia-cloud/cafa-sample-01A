@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Sample One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <nav>
+        <div class="logo">THE SAMPLE ONE</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li id="auth-link"></li>
+            <li><button onclick="toggleCart()" class="btn">🛒 Cart</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Our Premium Menu</h1>
+        
+        <div id="live-tracker"></div>
+
+        <div class="menu-grid" id="menu-container">
+            </div>
+    </div>
+
+    <div class="cart-modal" id="cart-modal">
+        <button class="btn btn-outline" onclick="toggleCart()" style="float: right;">Close</button>
+        <h2>Your Cart</h2>
+        <div id="cart-items" class="mt-2"></div>
+        <hr style="margin: 1rem 0; border-color: var(--glass-border);">
+        <h3>Total: <span id="cart-total">₹0</span></h3>
+        <button class="btn mt-2" style="width: 100%;" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

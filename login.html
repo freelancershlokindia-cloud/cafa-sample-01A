@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | The Sample One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <nav>
+        <div class="logo">THE SAMPLE ONE</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><button onclick="toggleTheme()" class="btn btn-outline">🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="container" style="max-width: 500px;">
+        <div class="glass-card text-center">
+            <h2 id="form-title">Login</h2>
+            <p style="font-size: 0.8rem; color: gray;">For Admin Panel testing, signup as Phone: <b>admin</b></p>
+            <form id="auth-form" class="mt-2">
+                
+                <div class="form-group signup-only" style="display: none;">
+                    <label>Full Name</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" id="phone" class="form-control" required>
+                </div>
+
+                <div class="form-group signup-only" style="display: none;">
+                    <label>Delivery Address</label>
+                    <textarea id="address" class="form-control" rows="2"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit</button>
+            </form>
+            <p class="mt-2" style="cursor: pointer; color: var(--primary-color); font-weight: bold;" id="toggle-auth" onclick="toggleAuthMode()">New here? Sign Up</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

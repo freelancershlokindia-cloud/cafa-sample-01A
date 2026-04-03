@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | The Sample One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <nav>
+        <div class="logo">ADMIN PANEL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Back to Site</a></li>
+            <li id="auth-link"></li>
+            <li><button onclick="toggleTheme()" class="btn btn-outline">🌙</button></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="admin-content">
+        <h1>Dashboard Control</h1>
+        
+        <div class="glass-card mt-2">
+            <h2>Live Order Management</h2>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Action / Status</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-orders">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
